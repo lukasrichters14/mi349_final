@@ -7,29 +7,47 @@ form.addEventListener('submit', event => {
 
 
 function roll(rolls) {
+    let total = 0;
     const section = document.getElementById('roll-display');
     section.innerHTML = '';
+    let currRoll = 0;
     for (let i = 0; i < rolls.get('d2'); i++) {
-        section.innerHTML += `<div class="die-roll"><img height="80" src="assets/d2.png"><p>${roll_die(2)}</p></div>`;
+        currRoll = roll_die(2);
+        section.innerHTML += `<div class="die-roll"><img height="80" src="assets/d2.png"><p>${currRoll}</p></div>`;
+        total += currRoll;
     }
     for (let i = 0; i < rolls.get('d4'); i++) {
-        section.innerHTML += `<div class="die-roll"><img height="80" src="assets/d4.png"><p>${roll_die(4)}</p></div>`;
+        currRoll = roll_die(4);
+        section.innerHTML += `<div class="die-roll"><img height="80" src="assets/d4.png"><p>${currRoll}</p></div>`;
+        total += currRoll;
     }
     for (let i = 0; i < rolls.get('d6'); i++) {
-        section.innerHTML += `<div class="die-roll"><img height="80" src="assets/d6.png"><p>${roll_die(6)}</p></div>`;
+        currRoll = roll_die(6);
+        section.innerHTML += `<div class="die-roll"><img height="80" src="assets/d6.png"><p>${currRoll}</p></div>`;
+        total += currRoll;
     }
     for (let i = 0; i < rolls.get('d8'); i++) {
-        section.innerHTML += `<div class="die-roll"><img height="90" src="assets/d8.png"><p>${roll_die(8)}</p></div>`;
+        currRoll = roll_die(8);
+        section.innerHTML += `<div class="die-roll"><img height="90" src="assets/d8.png"><p>${currRoll}</p></div>`;
+        total += currRoll;
     }
     for (let i = 0; i < rolls.get('d10'); i++) {
-        section.innerHTML += `<div class="die-roll"><img height="90" src="assets/d10.png"><p>${roll_die(10)}</p></div>`;
+        currRoll = roll_die(10);
+        section.innerHTML += `<div class="die-roll"><img height="90" src="assets/d10.png"><p>${currRoll}</p></div>`;
+        total += currRoll;
     }
     for (let i = 0; i < rolls.get('d12'); i++) {
-        section.innerHTML += `<div class="die-roll"><img height="90" src="assets/d12.png"><p>${roll_die(12)}</p></div>`;
+        currRoll = roll_die(12);
+        section.innerHTML += `<div class="die-roll"><img height="90" src="assets/d12.png"><p>${currRoll}</p></div>`;
+        total += currRoll;
     }
     for (let i = 0; i < rolls.get('d20'); i++) {
-        section.innerHTML += `<div class="die-roll"><img height="90" src="assets/d20.png"><p>${roll_die(20)}</p></div>`;
+        currRoll = roll_die(20);
+        section.innerHTML += `<div class="die-roll"><img height="90" src="assets/d20.png"><p>${currRoll}</p></div>`;
+        total += currRoll;
     }
+
+    document.getElementById('roll-total').innerHTML = `<strong>Total: ${total}</strong>`;
 }
 
 
