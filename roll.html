@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>flumph base</title>
+</head>
+<body>
+    <header>
+        <h1>flumph base</h1>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="initiative.html">Initiative Tracker</a></li>
+            <li><a href="roll.html">Roll Simulator</a></li>
+            <li><a href="creatures.html">Creature Details</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <form id="roll-form">
+
+            <label for="d2" id="d2-label">d2</label>
+            <input type="number" name="d2" id="d2">
+            <label for="d4" id="d4-label">d4</label>
+            <input type="number" name="d4" id="d4">
+            <label for="d6" id="d6-label">d6</label>
+            <input type="number" name="d6" id="d6">
+            <label for="d8" id="d8-label">d8</label>
+            <input type="number" name="d8" id="d8">
+            <label for="d10" id="d10-label">d10</label>
+            <input type="number" name="d10" id="d10">
+            <label for="d12" id="d12-label">d12</label>
+            <input type="number" name="d12" id="d12">
+            <label for="d20" id="d20-label">d20</label>
+            <input type="number" name="d20" id="d20">
+
+            <button class="default-button">ROLL</button>
+        </form>
+
+        <section id="roll-display">
+
+        </section>
+    </main>
+    <script src="scripts/roll.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>flumph base</title>
+</head>
+<body>
+    <header>
+        <h1>flumph base</h1>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="initiative.html">Initiative Tracker</a></li>
+            <li><a href="roll.html">Roll Simulator</a></li>
+            <li><a href="creatures.html">Creature Details</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <form id="creature-search">
+            <input type="text" id="search" name="search" placeholder="Search...">
+            <button>🔍</button>
+        </form>
+
+        <section id="details">
+            <h2 id="creature-name"></h2>
+            <p id="armor-class"><em>Armor Class: </em></p>
+            <p id="hit-points"><em>Hit Points: </em></p>
+            <div class="statistics">
+                <div class="stat">
+                    <p><strong>STR</strong></p>
+                    <p id="str"></p>
+                </div>
+                <div class="stat">
+                    <p><strong>DEX</strong></p>
+                    <p id="dex"></p>
+                </div>
+                <div class="stat">
+                    <p><strong>CON</strong></p>
+                    <p id="con"></p>
+                </div>
+                <div class="stat">
+                    <p><strong>INT</strong></p>
+                    <p id="int"></p>
+                </div>
+                <div class="stat">
+                    <p><strong>WIS</strong></p>
+                    <p id="wis"></p>
+                </div>
+                <div class="stat">
+                    <p><strong>CHA</strong></p>
+                    <p id="cha"></p>
+                </div>
+            </div>
+            <div id="actions">
+
+            </div>
+        </section>
+
+    </main>
+    <script src="scripts/creature-details.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>flumph base</title>
+</head>
+<body>
+    <header>
+        <h1>flumph base</h1>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="initiative.html">Initiative Tracker</a></li>
+            <li><a href="roll.html">Roll Simulator</a></li>
+            <li><a href="creatures.html">Creature Details</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section id="intro">
+            <img src="assets/logo.png" alt="the flumph base logo">
+            <div id="copy">
+                <p>
+                    Named after the delightfully whimsical and knowledgable creature from Dungeons
+                    and Dragons, Flumph Base strives to simplify D&D for everyone. While the endless
+                    imaginative nature of the game cannot be matched, annoying mechanics and tedious 
+                    searching for rules can render the most exciting moments a dull affair. Flumph Base 
+                    provides everything, from simple tools like initiative tracking and dice rolling, 
+                    to battle simulations powered by the D&D 5e API.
+                </p>
+                <p>
+                    The D&D 5e API is an unofficial open-source API and database, providing creature 
+                    stat blocks, weapons and items information, and many other fantastic resources. 
+                    Without the hard work of all of the many contributors to that API, this website could 
+                    not exist. You can check out the API <a href="http://www.dnd5eapi.co/">here</a>, 
+                    and contribute on <a href="https://github.com/5e-bits/5e-srd-api">Github</a>.
+                </p>
+            </div>
+        </section>
+
+        <section id="tools">
+            <div class="tool">
+                <img src="assets/swords.png" alt="two crossed swords">
+                <h2>Initiative Tracker</h2>
+                <p>Easily remember the order of your players and enemies, so you never lose the thrill of battle!</p>
+            </div>
+            <div class="tool">
+                <img src="assets/dice.png" alt="a red die">
+                <h2>Roll Simulator</h2>
+                <p>Avoid doing basic arithmetic, you’re supposed to be having fun, remember? </p>
+            </div>
+            <div class="tool">
+                <img src="assets/paw.png" alt="a pawprint with claws">
+                <h2>Creature Details</h2>
+                <p>Easily check the stat block of any monster or NPC, and check out the helpful battle features!</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts/creature-details.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>flumph base</title>
+</head>
+<body>
+    <header>
+        <h1>flumph base</h1>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="initiative.html">Initiative Tracker</a></li>
+            <li><a href="roll.html">Roll Simulator</a></li>
+            <li><a href="creatures.html">Creature Details</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section id="it-controls">
+            <h2 id="tracking">Currently tracking 0 participants</h2>
+            <button id="add-button" class="default-button" onclick="openModal(document.getElementById('add-modal'))">Add..</button>
+            <button id="remove-button" class="default-button" onclick="openModal(document.getElementById('remove-modal')); initRemove()">Remove...</button>
+        </section>
+
+        <div id="add-modal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal(document.getElementById('add-modal'))">&times;</span>
+              <label>
+                  Name:
+                  <input type="text" name="new-name" id="new-name">
+              </label>
+              <button onclick="add()" class="default-button">Submit</button>
+            </div>  
+        </div>
+        <div id="remove-modal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal(document.getElementById('remove-modal'))">&times;</span>
+              <div id="remove-options">
+
+              </div>
+            </div>  
+        </div>
+
+        <section id="participant">
+            <button id="previous" class="default-button" onclick="previous()">Previous</button>
+            <h2 id="name">'s Turn</h2>
+            <button id="next" onclick="next()" class="default-button">Next</button>
+        </section>
+    </main>
+
+    <script src="scripts/initiative-tracker.js"></script>
+</body>
+</html>
